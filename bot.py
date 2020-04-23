@@ -18,7 +18,7 @@ def cmd_start(message):
 
 
 @bot.message_handler(commands=["isalive"])
-def cmd_start(message):
+def cmd_isalive(message):
     bot.send_message(
         message.chat.id, f"Yes, I am",
     )
