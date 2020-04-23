@@ -17,6 +17,13 @@ def cmd_start(message):
     )
 
 
+@bot.message_handler(commands=["isalive"])
+def cmd_start(message):
+    bot.send_message(
+        message.chat.id, f"Yes, I am",
+    )
+
+
 @bot.message_handler(commands=["anekdot"])
 def cmd_anekdot(message):
     msg = bot.send_message(message.chat.id, "А ну давай")
